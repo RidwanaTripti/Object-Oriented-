@@ -2,19 +2,19 @@ class Performer {
   void perform() => print("perform...");
 }
 
-mixin Dancer on Performer {
+mixin Dancer {
   void workasdancer() => print("dancer");
-  // void perform() => workasdancer();
-  void perform() => super.perform();
-}
-mixin Actor {
-  void workasactor() => print("actor");
-  void perform() => workasactor();
+  void perform() => workasdancer();
   // void perform() => super.perform();
+}
+mixin Actor on Performer {
+  void workasactor() => print("actor");
+  // void perform() => workasactor();
+  void perform() => super.perform();
 }
 mixin Singer {
   void workassinger() => print("singer");
-  void perform() => workassinger();
+  // void perform() => workassinger();
   // void perform() => super.perform();
 }
 
