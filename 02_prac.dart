@@ -1,8 +1,8 @@
 class Animal {
   String Name = "";
 
-  Animal(String n) {
-    Name = n;
+  Animal(String Name) {
+    this.Name = Name;
   }
 
   void WhoIAm() {
